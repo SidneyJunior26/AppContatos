@@ -1,0 +1,26 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 293
+  Width = 370
+  object fdConexao: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\sidne\OneDrive - Fatec Centro Paula Souza\Dese' +
+        'nvolvimento\Aplicativo Delphi\Banco de Dados\CONTATOS.IB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'DriverID=IB')
+    Connected = True
+    LoginPrompt = False
+    Left = 32
+    Top = 13
+  end
+  object FDQuery1: TFDQuery
+    Connection = fdConexao
+    SQL.Strings = (
+      'SELECT * FROM CONTATOS')
+    Left = 80
+    Top = 80
+  end
+end

@@ -1,0 +1,510 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 570
+  ClientWidth = 380
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 3
+  object tbctrlPrincipal: TTabControl
+    Align = Client
+    Size.Width = 380.000000000000000000
+    Size.Height = 570.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      380s
+      521s
+      380s
+      521s)
+    object tbItemListagem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 190.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'LISTAGEM'
+      ExplicitSize.cx = 190.000000000000000000
+      ExplicitSize.cy = 35.000000000000000000
+      object ToolBar1: TToolBar
+        Size.Width = 380.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label1: TLabel
+          Align = Contents
+          Size.Width = 380.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Contatos'
+          TabOrder = 0
+        end
+        object btnAdicionar: TButton
+          Align = Right
+          Margins.Right = 8.000000000000000000
+          Position.X = 324.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'addtoolbutton'
+          TabOrder = 1
+          OnClick = btnAdicionarClick
+        end
+      end
+      object lsviewContatos: TListView
+        ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+        ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        ItemIndex = 0
+        Align = Client
+        Size.Width = 380.000000000000000000
+        Size.Height = 473.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnItemClick = lsviewContatosItemClick
+      end
+    end
+    object tbItemDetalhe: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 190.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'DETALHE'
+      ExplicitSize.cx = 190.000000000000000000
+      ExplicitSize.cy = 35.000000000000000000
+      object ToolBar2: TToolBar
+        Size.Width = 380.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblTitulo: TLabel
+          Align = Contents
+          Size.Width = 380.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Detalhes'
+          TabOrder = 1
+        end
+        object btnVoltar: TButton
+          Align = Left
+          Margins.Left = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          TabOrder = 0
+          OnClick = btnVoltarClick
+        end
+        object btnSalvar: TButton
+          Align = Right
+          Margins.Right = 8.000000000000000000
+          Position.X = 268.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'donetoolbutton'
+          TabOrder = 2
+          Text = 'Salvar'
+          OnClick = btnSalvarClick
+        end
+        object btnEdicao: TButton
+          Align = Right
+          Margins.Right = 8.000000000000000000
+          Position.X = 324.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'composetoolbutton'
+          TabOrder = 3
+          Text = 'btnEdicao'
+          OnClick = btnEdicaoClick
+        end
+        object btnCancelar: TButton
+          Align = Left
+          Margins.Left = 8.000000000000000000
+          Position.X = 64.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'deletetoolbutton'
+          TabOrder = 4
+          Text = 'Cancelar'
+          OnClick = btnCancelarClick
+        end
+      end
+      object ListBox1: TListBox
+        Align = Top
+        Position.Y = 48.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 205.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 380.000000000000000000
+        Viewport.Height = 205.000000000000000000
+        object ListBoxItem1: TListBoxItem
+          Size.Width = 380.000000000000000000
+          Size.Height = 81.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Layout1: TLayout
+            Align = Left
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Position.X = 4.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 93.000000000000000000
+            Size.Height = 73.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object imgFoto: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Client
+              Enabled = False
+              Size.Width = 93.000000000000000000
+              Size.Height = 73.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnFoto: TButton
+              Align = Center
+              Enabled = False
+              Size.Width = 48.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'cameratoolbutton'
+              TabOrder = 1
+              Text = 'btnFoto'
+              OnClick = btnFotoClick
+            end
+          end
+          object Layout2: TLayout
+            Align = Client
+            Margins.Top = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Size.Width = 275.000000000000000000
+            Size.Height = 73.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object edtNome: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 0
+              Text = 'Sidney'
+              Position.Y = 4.000000000000000000
+              Enabled = False
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 275.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Nome'
+            end
+            object edtSobrenome: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 1
+              Text = 'Junior'
+              Position.Y = 40.000000000000000000
+              Enabled = False
+              Size.Width = 275.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Sobrenome'
+            end
+          end
+        end
+        object ListBoxItem2: TListBoxItem
+          Position.Y = 81.000000000000000000
+          Size.Width = 380.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object edtCelular: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 0
+            Text = '(11)96404-9901'
+            Enabled = False
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Celular (99)99999-9999'
+          end
+        end
+        object ListBoxItem3: TListBoxItem
+          Position.Y = 119.000000000000000000
+          Size.Width = 380.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object edtTelefone: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 0
+            Text = '(11)4403-7922'
+            Enabled = False
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Telefone (99)9999-9999'
+          end
+        end
+        object ListBoxItem4: TListBoxItem
+          Position.Y = 157.000000000000000000
+          Size.Width = 380.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object edtEmail: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 0
+            Text = 'sidneyjunior26@gmail.com'
+            Enabled = False
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'E-mail'
+          end
+        end
+        object lsboxPopUp: TListBox
+          Position.X = 48.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 256.000000000000000000
+          Size.Height = 137.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Visible = False
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 256.000000000000000000
+          Viewport.Height = 137.000000000000000000
+          object ListBoxItem5: TListBoxItem
+            TabOrder = 0
+            object Button1: TButton
+              Align = Client
+              Size.Width = 256.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Biblioteca'
+              OnClick = Button1Click
+            end
+          end
+          object ListBoxItem6: TListBoxItem
+            Position.Y = 44.000000000000000000
+            TabOrder = 1
+            object Button2: TButton
+              Align = Client
+              Size.Width = 256.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Nova Foto'
+              OnClick = Button2Click
+            end
+          end
+          object ListBoxItem7: TListBoxItem
+            TextSettings.HorzAlign = Center
+            StyledSettings = [Family, Size, Style, FontColor]
+            Position.Y = 88.000000000000000000
+            Size.Width = 256.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object Button3: TButton
+              Align = Client
+              StyledSettings = [Family, Size, Style]
+              Size.Width = 256.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Cancelar'
+              TextSettings.FontColor = claRed
+              OnClick = Button3Click
+            end
+          end
+        end
+      end
+    end
+  end
+  object fdConexao: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\sidne\OneDrive - Fatec Centro Paula Souza\Dese' +
+        'nvolvimento\Aplicativo Delphi\Banco de Dados\CONTATOS.IB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'DriverID=IB')
+    Connected = True
+    LoginPrompt = False
+    Left = 32
+    Top = 501
+  end
+  object QryContatos: TFDQuery
+    Active = True
+    Connection = fdConexao
+    SQL.Strings = (
+      'SELECT * FROM CONTATOS')
+    Left = 120
+    Top = 501
+    object QryContatosNOME: TStringField
+      FieldName = 'NOME'
+      Origin = 'NOME'
+      Size = 50
+    end
+    object QryContatosSOBRENOME: TStringField
+      FieldName = 'SOBRENOME'
+      Origin = 'SOBRENOME'
+      Size = 100
+    end
+    object QryContatosCELULAR: TStringField
+      FieldName = 'CELULAR'
+      Origin = 'CELULAR'
+      EditMask = '!\(99\)00000-0000;1;_'
+      Size = 14
+    end
+    object QryContatosTELEFONE: TStringField
+      FieldName = 'TELEFONE'
+      Origin = 'TELEFONE'
+      EditMask = '!\(99\)0000-0000;1;_'
+      Size = 13
+    end
+    object QryContatosEMAIL: TStringField
+      FieldName = 'EMAIL'
+      Origin = 'EMAIL'
+      Size = 150
+    end
+    object QryContatosFOTO: TBlobField
+      FieldName = 'FOTO'
+      Origin = 'FOTO'
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = QryContatos
+    ScopeMappings = <>
+    Left = 216
+    Top = 501
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 316
+    Top = 501
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'NOME'
+      Control = lsviewContatos
+      FillExpressions = <
+        item
+          SourceMemberName = 'CELULAR'
+          ControlMemberName = 'Detail'
+        end
+        item
+          SourceMemberName = 'FOTO'
+          ControlMemberName = 'Bitmap'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'NOME'
+      Control = edtNome
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'SOBRENOME'
+      Control = edtSobrenome
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'CELULAR'
+      Control = edtCelular
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'TELEFONE'
+      Control = edtTelefone
+      Track = False
+    end
+    object LinkControlToField5: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'EMAIL'
+      Control = edtEmail
+      Track = False
+    end
+    object LinkPropertyToFieldBitmap: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'FOTO'
+      Component = imgFoto
+      ComponentProperty = 'Bitmap'
+    end
+  end
+  object ActionList1: TActionList
+    Left = 32
+    Top = 432
+    object actBiblioteca: TTakePhotoFromLibraryAction
+      Category = 'Media Library'
+      OnDidFinishTaking = actBibliotecaDidFinishTaking
+    end
+    object actCamera: TTakePhotoFromCameraAction
+      Category = 'Media Library'
+      OnDidFinishTaking = actCameraDidFinishTaking
+    end
+  end
+end

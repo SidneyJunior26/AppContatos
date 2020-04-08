@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/04/06 08:41:46.000.969,=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/06 08:53:37.000.026,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\sidne\OneDrive - Fatec Centro Paula Souza\Desenvolvimento\Aplicativo Delphi\CodFonte\UntPrincipal.fmx</Transaction>
+    <Transaction>2020/04/06 08:53:37.000.026,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\sidne\OneDrive - Fatec Centro Paula Souza\Desenvolvimento\Aplicativo Delphi\CodFonte\UntPrincipal.pas</Transaction>
+    <Transaction>2020/04/06 08:53:46.000.949,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\sidne\OneDrive - Fatec Centro Paula Souza\Desenvolvimento\Aplicativo Delphi\CodFonte\Contatos.dproj</Transaction>
+    <Transaction>2020/04/06 09:12:24.000.967,=C:\Users\sidne\OneDrive - Fatec Centro Paula Souza\Desenvolvimento\Aplicativo Delphi\CodFonte\Unit1.pas</Transaction>
+    <Transaction>2020/04/06 09:12:55.000.157,C:\Users\sidne\OneDrive - Fatec Centro Paula Souza\Desenvolvimento\Aplicativo Delphi\CodFonte\Unit1.dfm=C:\Users\sidne\OneDrive - Fatec Centro Paula Souza\Desenvolvimento\Aplicativo Delphi\CodFonte\DataModule.dfm</Transaction>
+    <Transaction>2020/04/06 09:12:55.000.157,C:\Users\sidne\OneDrive - Fatec Centro Paula Souza\Desenvolvimento\Aplicativo Delphi\CodFonte\Unit1.pas=C:\Users\sidne\OneDrive - Fatec Centro Paula Souza\Desenvolvimento\Aplicativo Delphi\CodFonte\DataModule.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="emulator-5554" Android64="emulator-5554"/>
+	</ActiveMobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

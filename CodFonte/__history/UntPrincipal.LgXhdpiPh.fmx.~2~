@@ -1,0 +1,88 @@
+inherited frmPrincipal_LgXhdpiPh: TfrmPrincipal_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited tbctrlPrincipal: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    Sizes = (
+      450s
+      646s
+      450s
+      646s)
+    inherited tbItemListagem: TTabItem
+      Size.Width = 225.000000000000000000
+      ExplicitSize.cx = 190.000000000000000000
+      ExplicitSize.cy = 35.000000000000000000
+      inherited ToolBar1: TToolBar
+        Size.Width = 450.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 450.000000000000000000
+        end
+        inherited btnAdicionar: TButton
+          Position.X = 394.000000000000000000
+        end
+      end
+      inherited lsviewContatos: TListView
+        Size.Width = 450.000000000000000000
+        Size.Height = 598.000000000000000000
+      end
+    end
+    inherited tbItemDetalhe: TTabItem
+      Size.Width = 225.000000000000000000
+      ExplicitSize.cx = 190.000000000000000000
+      ExplicitSize.cy = 35.000000000000000000
+      inherited ToolBar2: TToolBar
+        Size.Width = 450.000000000000000000
+        inherited lblTitulo: TLabel
+          Size.Width = 450.000000000000000000
+        end
+        inherited btnSalvar: TButton
+          Position.X = 394.000000000000000000
+        end
+        inherited btnEdicao: TButton
+          Position.X = 394.000000000000000000
+        end
+      end
+      inherited ListBox1: TListBox
+        Size.Width = 450.000000000000000000
+        Viewport.Width = 450.000000000000000000
+        Viewport.Height = 205.000000000000000000
+        inherited ListBoxItem1: TListBoxItem
+          Size.Width = 450.000000000000000000
+          inherited Layout2: TLayout
+            Size.Width = 345.000000000000000000
+            inherited edtNome: TEdit
+              Size.Width = 345.000000000000000000
+            end
+            inherited edtSobrenome: TEdit
+              Size.Width = 345.000000000000000000
+            end
+          end
+        end
+        inherited ListBoxItem2: TListBoxItem
+          Size.Width = 450.000000000000000000
+          inherited edtCelular: TEdit
+            Size.Width = 442.000000000000000000
+          end
+        end
+        inherited ListBoxItem3: TListBoxItem
+          Size.Width = 450.000000000000000000
+          inherited edtTelefone: TEdit
+            Size.Width = 442.000000000000000000
+          end
+        end
+        inherited ListBoxItem4: TListBoxItem
+          Size.Width = 450.000000000000000000
+          inherited edtEmail: TEdit
+            Size.Width = 442.000000000000000000
+          end
+        end
+        inherited lsboxPopUp: TListBox
+          Viewport.Width = 256.000000000000000000
+          Viewport.Height = 137.000000000000000000
+        end
+      end
+    end
+  end
+end
